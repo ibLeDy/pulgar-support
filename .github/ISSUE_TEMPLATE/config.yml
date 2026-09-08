@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Escribir un correo
+    url: mailto:iago@iagoalonso.xyz
+    about: Si no tienes cuenta de GitHub, cuéntamelo por correo.

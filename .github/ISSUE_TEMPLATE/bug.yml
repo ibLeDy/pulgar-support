@@ -1,0 +1,38 @@
+name: Algo no funciona
+description: Cuenta qué hace Pulgar que no debería.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias. Cuanto más concreto, antes se arregla — y no hace falta que
+        sepas nada técnico.
+  - type: textarea
+    id: what
+    attributes:
+      label: Qué pasó
+      description: Qué esperabas y qué salió en su lugar.
+      placeholder: "Escribí 'hola.' y salió 'hola. ' con un espacio de más."
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: En qué app
+      placeholder: "WhatsApp, Notas, Safari…"
+    validations:
+      required: true
+  - type: textarea
+    id: report
+    attributes:
+      label: El texto de "Reportar error"
+      description: >
+        En los ajustes de Pulgar (mantén pulsada la tecla 123) hay un botón
+        "Reportar error". Escribe un texto en tu campo con la versión y tus
+        ajustes — pégalo aquí. Puedes borrar lo que no quieras contar.
+      render: text
+  - type: textarea
+    id: steps
+    attributes:
+      label: Cómo repetirlo
+      description: Si sabes cómo hacer que vuelva a pasar, dilo aquí.
