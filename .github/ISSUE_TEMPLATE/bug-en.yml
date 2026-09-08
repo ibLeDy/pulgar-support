@@ -1,0 +1,38 @@
+name: Something is wrong
+description: Tell me what Pulgar does that it should not.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. The more specific, the sooner it is fixed — and you do not
+        need to know anything technical.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you expected, and what came out instead.
+      placeholder: "I typed 'hello.' and got 'hello. ' with an extra space."
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: In which app
+      placeholder: "WhatsApp, Notes, Safari…"
+    validations:
+      required: true
+  - type: textarea
+    id: report
+    attributes:
+      label: The text from "Report an issue"
+      description: >
+        Pulgar's settings (hold the 123 key) have a "Report an issue" button.
+        It writes text into your own text field with the version and your
+        settings — paste it here. Delete anything you would rather not share.
+      render: text
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to make it happen again
+      description: If you know how to reproduce it, say so here.
