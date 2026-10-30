@@ -1,6 +1,6 @@
 # Pulgar — Política de privacidad
 
-Última actualización: 7 de septiembre de 2026
+Última actualización: 30 de octubre de 2026
 
 Pulgar es un teclado para iPhone. Esta política describe qué datos trata y qué
 no, y está escrita para poder comprobarse, no sólo para leerse.
@@ -33,11 +33,12 @@ Nunca salen del dispositivo. Se borran al desinstalar Pulgar.
 ## Lo único que Pulgar lee
 
 Para poner mayúscula al empezar una frase, el teclado necesita saber si estás
-al principio de una. Para eso mira **como máximo los tres caracteres
-anteriores al cursor**, y sólo cuando no lo sabe ya por lo que él mismo acaba
-de escribir. Esa lectura:
+al principio de una. Cuando no lo sabe por lo que acaba de escribir, solicita
+a iOS el contexto anterior al cursor. iOS determina cuánto texto devuelve;
+Pulgar usa **sólo los últimos tres caracteres** para decidir la mayúscula.
+Ese contexto:
 
-- está acotada a tres caracteres;
+- puede contener más de tres caracteres al recibirse de iOS; sólo se usan los últimos tres;
 - no se guarda, ni se acumula, ni se registra, ni se envía;
 - produce como única salida un sí o un no.
 
@@ -79,7 +80,7 @@ Iago Alonso — iago@iagoalonso.xyz
 
 # Pulgar — Privacy Policy
 
-Last updated: 7 September 2026
+Last updated: 30 October 2026
 
 Pulgar is a keyboard for iPhone. This policy describes what it does and does
 not do with data, and is written so it can be checked rather than only read.
@@ -110,10 +111,11 @@ leave the device and are removed when you uninstall Pulgar.
 ## The one thing Pulgar reads
 
 To capitalise the start of a sentence, the keyboard needs to know whether you
-are at the start of one. For that it looks at **at most the three characters
-before the cursor**, and only when it does not already know from what it just
-typed itself. That read is bounded to three characters, is never stored,
-accumulated, logged or transmitted, and its only output is a yes or a no.
+are at the start of one. When it does not already know from what it just typed,
+it requests context before the cursor from iOS. iOS determines how much text
+is returned; Pulgar uses **only the last three characters** to decide whether
+to capitalise. The returned context may be longer. It is never stored,
+accumulated, logged or transmitted, and the decision's only output is yes or no.
 
 It is the only thing Pulgar reads from the app you are typing in.
 
